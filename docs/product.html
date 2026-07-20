@@ -7,10 +7,10 @@
   <meta name="description" content="Explore enterprise financial product engines powered by a Logic-as-Data substrate and ISO 20022 semantic data registry.">
   
   <!-- CSS Stylesheets -->
-  <link rel="stylesheet" href="css/variables.css?v=3.0">
-  <link rel="stylesheet" href="css/reset.css?v=3.0">
-  <link rel="stylesheet" href="css/layout.css?v=3.0">
-  <link rel="stylesheet" href="css/components.css?v=3.0">
+  <link rel="stylesheet" href="css/variables.css?v=5.0">
+  <link rel="stylesheet" href="css/reset.css?v=5.0">
+  <link rel="stylesheet" href="css/layout-v2.css?v=5.0">
+  <link rel="stylesheet" href="css/components-v2.css?v=5.0">
   <style>
     .architecture-box {
       background: var(--bg-card);
@@ -52,15 +52,263 @@
         <span class="logo-text">Infinity Product Labs</span>
       </a>
       
-      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
         <ul class="nav-list">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="product.html?id=corebanking" class="nav-link active">Products</a></li>
-          <li class="nav-item"><a href="studio.html?id=workflow" class="nav-link">Design Studios</a></li>
-          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">Company</a></li>
+          
+          <!-- Menu 1: Ingestion & Edge Fabric -->
+          <li class="nav-item has-mega-menu">
+            <a href="services.html#ingestion-edge" class="nav-link has-submenu">Ingestion & Edge Fabric</a>
+            <div class="mega-menu-panel">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4 class="mega-heading">Edge Telemetry & Streaming</h4>
+                  <div class="mega-links">
+                    <a href="services.html#edge-telemetry" class="mega-item">
+                      <div class="mega-item-icon">📡</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">IoT Edge Telemetry</span>
+                        <span class="mega-item-desc">Smart Grids & Meter Streams</span>
+                      </div>
+                    </a>
+                    <a href="services.html#realtime-streams" class="mega-item">
+                      <div class="mega-item-icon">⚡</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Real-Time Streams</span>
+                        <span class="mega-item-desc">REST, GraphQL, gRPC & Kong Gateway</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="mega-col">
+                  <h4 class="mega-heading">Data Transformation</h4>
+                  <div class="mega-links">
+                    <a href="services.html#canonical-gateway" class="mega-item">
+                      <div class="mega-item-icon">🚪</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Canonical Data Gateway</span>
+                        <span class="mega-item-desc">ISO 20022 Input Normalization</span>
+                      </div>
+                    </a>
+                    <a href="services.html#reconciliation" class="mega-item">
+                      <div class="mega-item-icon">⚖️</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Enterprise Reconciliation</span>
+                        <span class="mega-item-desc">ERE Block & Shadow Subsystems</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Menu 2: Low-Code Factory -->
+          <li class="nav-item has-mega-menu">
+            <a href="studio.html?id=workflow" class="nav-link has-submenu">Low-Code Factory</a>
+            <div class="mega-menu-panel">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4 class="mega-heading">Visual Canvases</h4>
+                  <div class="mega-links">
+                    <a href="studio.html?id=workflow" class="mega-item">
+                      <div class="mega-item-icon">🎨</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Workflow DAG Studio</span>
+                        <span class="mega-item-desc">Visual State Transition Canvas</span>
+                      </div>
+                    </a>
+                    <a href="studio.html?id=immersive" class="mega-item">
+                      <div class="mega-item-icon">🖥️</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Immersive Interface Studio</span>
+                        <span class="mega-item-desc">Spatial 3D System Dashboard</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="mega-col">
+                  <h4 class="mega-heading">Logic & AI</h4>
+                  <div class="mega-links">
+                    <a href="studio.html?id=rules" class="mega-item">
+                      <div class="mega-item-icon">🔀</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Business Rules Studio</span>
+                        <span class="mega-item-desc">Logic-as-Data Policy Graph</span>
+                      </div>
+                    </a>
+                    <a href="studio.html?id=agentic" class="mega-item">
+                      <div class="mega-item-icon">🔌</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Agentic Systems Studio</span>
+                        <span class="mega-item-desc">NLP Prompt-to-Canvas AI Generator</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Menu 3: Middleware Execution Engines -->
+          <li class="nav-item has-mega-menu">
+            <a href="services.html#middleware-engines" class="nav-link has-submenu">Middleware Execution Engines</a>
+            <div class="mega-menu-panel">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4 class="mega-heading">Rules & Governance</h4>
+                  <div class="mega-links">
+                    <a href="services.html#governance-engine" class="mega-item">
+                      <div class="mega-item-icon">🚧</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Governance Guardrails Engine</span>
+                        <span class="mega-item-desc">4-Eye & 8-Eye Overrides</span>
+                      </div>
+                    </a>
+                    <a href="services.html#calculation-engine" class="mega-item">
+                      <div class="mega-item-icon">⚙️</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Calculation Engine</span>
+                        <span class="mega-item-desc">Transform Block Execution</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="mega-col">
+                  <h4 class="mega-heading">Event & Batch Pipelines</h4>
+                  <div class="mega-links">
+                    <a href="services.html#broadcasting-triggers" class="mega-item">
+                      <div class="mega-item-icon">📢</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Broadcasting Triggers</span>
+                        <span class="mega-item-desc">State Transitions & Event Bus</span>
+                      </div>
+                    </a>
+                    <a href="services.html#upload-pipeline" class="mega-item">
+                      <div class="mega-item-icon">⏱️</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Multi-File Upload Pipeline</span>
+                        <span class="mega-item-desc">Asynchronous Batch Processing</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Menu 4: Privacy & Trust Storage -->
+          <li class="nav-item has-mega-menu">
+            <a href="services.html#privacy-trust" class="nav-link has-submenu">Privacy & Trust Storage</a>
+            <div class="mega-menu-panel">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4 class="mega-heading">Distributed Ledgers</h4>
+                  <div class="mega-links">
+                    <a href="services.html#distributed-trust" class="mega-item">
+                      <div class="mega-item-icon">⛓️</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Distributed Trust Layer</span>
+                        <span class="mega-item-desc">Hyperledger Fabric Substrate</span>
+                      </div>
+                    </a>
+                    <a href="services.html#relational-datastore" class="mega-item">
+                      <div class="mega-item-icon">🗄️</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Relational State Datastore</span>
+                        <span class="mega-item-desc">Tracking Schema Evolution</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="mega-col">
+                  <h4 class="mega-heading">Audit & Security</h4>
+                  <div class="mega-links">
+                    <a href="services.html#evidence-compiler" class="mega-item">
+                      <div class="mega-item-icon">🔐</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Evidence Packet Compiler</span>
+                        <span class="mega-item-desc">SHA-256 Cryptographic Packets</span>
+                      </div>
+                    </a>
+                    <a href="services.html#audit-repository" class="mega-item">
+                      <div class="mega-item-icon">✅</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Audit-By-Design Repository</span>
+                        <span class="mega-item-desc">Immutable Event Store</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Menu 5: Pre-Built Banking Solutions -->
+          <li class="nav-item has-mega-menu">
+            <a href="product.html?id=corebanking" class="nav-link has-submenu">Pre-Built Banking Solutions</a>
+            <div class="mega-menu-panel">
+              <div class="mega-grid">
+                <div class="mega-col">
+                  <h4 class="mega-heading">Core & Ledger</h4>
+                  <div class="mega-links">
+                    <a href="product.html?id=corebanking" class="mega-item">
+                      <div class="mega-item-icon">🏦</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">CoreBanking Engine</span>
+                        <span class="mega-item-desc">High-Throughput Real-Time Ledger</span>
+                      </div>
+                    </a>
+                    <a href="product.html?id=virtualaccounts" class="mega-item">
+                      <div class="mega-item-icon">📁</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Virtual Accounts</span>
+                        <span class="mega-item-desc">Virtual Ledger Segregation</span>
+                      </div>
+                    </a>
+                    <a href="product.html?id=cards" class="mega-item">
+                      <div class="mega-item-icon">💳</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Cards Issuance</span>
+                        <span class="mega-item-desc">Payment Processing Rails</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="mega-col">
+                  <h4 class="mega-heading">Lending & Cash</h4>
+                  <div class="mega-links">
+                    <a href="product.html?id=commerciallending" class="mega-item">
+                      <div class="mega-item-icon">🏢</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Commercial Lending</span>
+                        <span class="mega-item-desc">Corporate Credit & Assessment</span>
+                      </div>
+                    </a>
+                    <a href="product.html?id=retaillending" class="mega-item">
+                      <div class="mega-item-icon">🧑‍🤝‍🧑</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Retail Lending</span>
+                        <span class="mega-item-desc">Automated Origination Scoring</span>
+                      </div>
+                    </a>
+                    <a href="product.html?id=paymenthub" class="mega-item">
+                      <div class="mega-item-icon">💸</div>
+                      <div class="mega-item-content">
+                        <span class="mega-item-title">Payment Hub</span>
+                        <span class="mega-item-desc">Universal Payment Orchestration</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
         </ul>
-        <a href="contact.html" class="nav-cta">Initiate Consultation</a>
+        
+        <div class="nav-actions">
+          <a href="contact.html" class="btn btn-primary nav-cta">Schedule Demo</a>
+        </div>
       </nav>
     </div>
   </header>
@@ -130,7 +378,7 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/main.js?v=3.0"></script>
+  <script src="js/main-v2.js?v=5.0"></script>
   <script>
     const productsData = {
       corebanking: {
