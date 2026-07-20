@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 920" width="1440" height="920"
+     font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EFF3F8"/>
+      <stop offset="100%" stop-color="#E4EBF4"/>
+    </linearGradient>
+    <linearGradient id="navyCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#122344"/>
+      <stop offset="100%" stop-color="#0B1A32"/>
+    </linearGradient>
+    <linearGradient id="coreCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0C1B3C"/>
+      <stop offset="100%" stop-color="#07101F"/>
+    </linearGradient>
+    <linearGradient id="arrowFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1A50CC"/>
+      <stop offset="100%" stop-color="#2461E8"/>
+    </linearGradient>
+    <filter id="s1">
+      <feDropShadow dx="0" dy="5" stdDeviation="9" flood-color="#0A1525" flood-opacity="0.18"/>
+    </filter>
+    <filter id="s2">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0A1525" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND -->
+  <rect width="1440" height="920" fill="url(#bg)"/>
+  <line x1="0" y1="108" x2="1440" y2="108" stroke="#C8D4E2" stroke-width="1"/>
+
+  <!-- TITLE BLOCK -->
+  <text x="56" y="60" font-size="34" font-weight="800" fill="#0F172A" letter-spacing="-0.5">Neural Banking Framework</text>
+  <text x="56" y="88" font-size="13" fill="#64748B">Enterprise-grade unified cognitive architecture for domain-agnostic financial automation</text>
+
+  <!-- RIGHT COLUMN HEADER -->
+  <text x="1122" y="132" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle" letter-spacing="1.5">SAMPLE WORKFLOW EXAMPLES</text>
+  <text x="1122" y="150" font-size="10" fill="#94A3B8" text-anchor="middle">(ILLUSTRATIVE)</text>
+
+  <!--
+  CORRECTED GRID (zero overlaps, generous spacing):
+  Total canvas: 920px height. Header uses top 108px. Usable: y=130..910 = 780px
+
+  Layout zones:
+    Top engine row:    y=140..260  (center y=200, height=120)
+    GAP:               y=260..310  (50px gap)
+    CORE CARD:         y=310..610  (center y=460, height=300)
+    GAP:               y=610..660  (50px gap)
+    Bottom engine row: y=660..780  (center y=720, height=120)
+
+  Left column x:    40..280  (center x=160)
+  Right column x:   600..840 (center x=720)
+  Core card x:      355..645 (center x=500, width=290)
+
+  Connector spines:
+    Left vertical: x=280, y=200..720
+    Right vertical: x=600, y=200..720
+    Top horizontal: y=200, x=280..600
+    Bottom horizontal: y=720, x=280..600
+    Mid left: y=460, x=280..355
+    Mid right: y=460, x=645..600 (drawn from core right outward)
+  -->
+
+  <!-- CONNECTORS -->
+  <line x1="280" y1="200" x2="280" y2="720" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <line x1="600" y1="200" x2="600" y2="720" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <line x1="280" y1="200" x2="600" y2="200" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <line x1="280" y1="720" x2="600" y2="720" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <line x1="280" y1="460" x2="355" y2="460" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <line x1="645" y1="460" x2="600" y2="460" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5 3"/>
+
+  <!-- Junction dots -->
+  <circle cx="280" cy="200" r="5" fill="#3B82F6" opacity="0.85"/>
+  <circle cx="600" cy="200" r="5" fill="#3B82F6" opacity="0.85"/>
+  <circle cx="280" cy="460" r="5" fill="#3B82F6" opacity="0.85"/>
+  <circle cx="600" cy="460" r="5" fill="#3B82F6" opacity="0.85"/>
+  <circle cx="280" cy="720" r="5" fill="#3B82F6" opacity="0.85"/>
+  <circle cx="600" cy="720" r="5" fill="#3B82F6" opacity="0.85"/>
+
+  <!-- ==================== ENGINE MODULE CARDS ==================== -->
+
+  <!-- TOP-LEFT: Business Rules Engine (y=140..260) -->
+  <g filter="url(#s1)">
+    <rect x="40" y="140" width="240" height="120" rx="12" fill="url(#navyCard)" stroke="#1E3A6E" stroke-width="0.8"/>
+    <rect x="40" y="140" width="6" height="120" rx="3" fill="#3B82F6"/>
+  </g>
+  <text x="165" y="192" font-size="17" font-weight="700" fill="#F1F5F9" text-anchor="middle">Business Rules</text>
+  <text x="165" y="214" font-size="17" font-weight="700" fill="#F1F5F9" text-anchor="middle">Engine</text>
+  <text x="165" y="240" font-size="11.5" fill="#93C5FD" text-anchor="middle">Rule &amp; Decision Logic</text>
+
+  <!-- TOP-RIGHT: Symbolic Computation Engine (y=140..260) -->
+  <g filter="url(#s1)">
+    <rect x="600" y="140" width="240" height="120" rx="12" fill="url(#navyCard)" stroke="#1E3A6E" stroke-width="0.8"/>
+    <rect x="600" y="140" width="6" height="120" rx="3" fill="#3B82F6"/>
+  </g>
+  <text x="725" y="186" font-size="17" font-weight="700" fill="#F1F5F9" text-anchor="middle">Symbolic Computation</text>
+  <text x="725" y="208" font-size="17" font-weight="700" fill="#F1F5F9" text-anchor="middle">Engine</text>
+  <text x="725" y="234" font-size="11.5" fill="#93C5FD" text-anchor="middle">(Financial Math)</text>
+
+  <!-- BOTTOM-LEFT: Zero-Code API Studio (y=660..780) -->
+  <g filter="url(#s1)">
+    <rect x="40" y="660" width="240" height="120" rx="12" fill="url(#navyCard)" stroke="#1E3A6E" stroke-width="0.8"/>
+    <rect x="40" y="660" width="6" height="120" rx="3" fill="#3B82F6"/>
+  </g>
+  <text x="165" y="712" font-size="17" font-weight="700" fill="#F1F5F9" text-anchor="middle">Zero-Code API</text>
+  <text x="165" y="734" font-size="17" font-weight="700" fill="#F1F5F9" text-anchor="middle">Studio</text>
+  <text x="165" y="760" font-size="11.5" fill="#93C5FD" text-anchor="middle">(Integration Endpoints)</text>
+
+  <!-- BOTTOM-RIGHT: Dynamic Screen Canvas (y=660..780) -->
+  <g filter="url(#s1)">
+    <rect x="600" y="660" width="240" height="120" rx="12" fill="url(#navyCard)" stroke="#1E3A6E" stroke-width="0.8"/>
+    <rect x="600" y="660" width="6" height="120" rx="3" fill="#3B82F6"/>
+  </g>
+  <text x="725" y="712" font-size="17" font-weight="700" fill="#F1F5F9" text-anchor="middle">Dynamic Screen</text>
+  <text x="725" y="734" font-size="17" font-weight="700" fill="#F1F5F9" text-anchor="middle">Canvas</text>
+  <text x="725" y="760" font-size="11.5" fill="#93C5FD" text-anchor="middle">(Adaptive UI)</text>
+
+  <!-- ==================== CENTRAL CORE CARD (y=310..610) ==================== -->
+  <g filter="url(#s1)">
+    <rect x="355" y="310" width="290" height="300" rx="16" fill="url(#coreCard)" stroke="#1E3A8A" stroke-width="1.5"/>
+    <rect x="355" y="310" width="8" height="300" rx="4" fill="#60A5FA"/>
+  </g>
+  <text x="500" y="400" font-size="21" font-weight="800" fill="#F8FAFC" text-anchor="middle">INTELLIGENT</text>
+  <text x="500" y="430" font-size="21" font-weight="800" fill="#F8FAFC" text-anchor="middle">TRANSACTION</text>
+  <text x="500" y="460" font-size="21" font-weight="800" fill="#F8FAFC" text-anchor="middle">WORKFLOWS</text>
+  <line x1="385" y1="478" x2="620" y2="478" stroke="#1E3461" stroke-width="1"/>
+  <text x="500" y="510" font-size="11" fill="#94A3B8" text-anchor="middle">Visual Workflow &amp; API</text>
+  <text x="500" y="527" font-size="11" fill="#94A3B8" text-anchor="middle">Orchestration Canvas</text>
+
+  <!-- ==================== CHEVRON ARROW (centered at y=460) ==================== -->
+  <!-- Arrow same navy as cards for visual cohesion, wider body -->
+  <g filter="url(#s1)">
+    <polygon points="645,432 820,432 820,400 930,460 820,520 820,488 645,488" fill="url(#navyCard)" stroke="#3B82F6" stroke-width="1"/>
+  </g>
+  <text x="730" y="450" font-size="12" font-weight="700" fill="#F1F5F9" text-anchor="middle" letter-spacing="0.5">GENERATES</text>
+  <text x="730" y="464" font-size="12" font-weight="700" fill="#F1F5F9" text-anchor="middle" letter-spacing="0.5">CROSS-DOMAIN</text>
+  <text x="730" y="478" font-size="12" font-weight="700" fill="#F1F5F9" text-anchor="middle" letter-spacing="0.5">WORKFLOWS</text>
+
+  <!-- ==================== RIGHT OUTPUT CARDS ==================== -->
+
+  <g filter="url(#s2)">
+    <rect x="950" y="155" width="345" height="86" rx="10" fill="url(#navyCard)" stroke="#1E3A6E" stroke-width="0.8"/>
+    <rect x="950" y="155" width="6" height="86" rx="3" fill="#38BDF8"/>
+  </g>
+  <text x="1127" y="193" font-size="15" font-weight="700" fill="#F1F5F9" text-anchor="middle">Customer Onboarding</text>
+  <text x="1127" y="215" font-size="15" font-weight="700" fill="#F1F5F9" text-anchor="middle">Workflows</text>
+
+  <g filter="url(#s2)">
+    <rect x="950" y="257" width="345" height="86" rx="10" fill="url(#navyCard)" stroke="#1E3A6E" stroke-width="0.8"/>
+    <rect x="950" y="257" width="6" height="86" rx="3" fill="#38BDF8"/>
+  </g>
+  <text x="1127" y="295" font-size="15" font-weight="700" fill="#F1F5F9" text-anchor="middle">Payment Transaction</text>
+  <text x="1127" y="317" font-size="15" font-weight="700" fill="#F1F5F9" text-anchor="middle">Workflows</text>
+
+  <g filter="url(#s2)">
+    <rect x="950" y="359" width="345" height="86" rx="10" fill="url(#navyCard)" stroke="#1E3A6E" stroke-width="0.8"/>
+    <rect x="950" y="359" width="6" height="86" rx="3" fill="#38BDF8"/>
+  </g>
+  <text x="1127" y="397" font-size="15" font-weight="700" fill="#F1F5F9" text-anchor="middle">Loan Origination</text>
+  <text x="1127" y="419" font-size="15" font-weight="700" fill="#F1F5F9" text-anchor="middle">Workflows</text>
+
+  <g filter="url(#s2)">
+    <rect x="950" y="461" width="345" height="86" rx="10" fill="url(#navyCard)" stroke="#1E3A6E" stroke-width="0.8"/>
+    <rect x="950" y="461" width="6" height="86" rx="3" fill="#38BDF8"/>
+  </g>
+  <text x="1127" y="499" font-size="15" font-weight="700" fill="#F1F5F9" text-anchor="middle">Compliance &amp; Risk</text>
+  <text x="1127" y="521" font-size="15" font-weight="700" fill="#F1F5F9" text-anchor="middle">Workflows</text>
+
+  <!-- Vertical ellipsis dots -->
+  <circle cx="1122" cy="572" r="5" fill="#64748B"/>
+  <circle cx="1122" cy="596" r="5" fill="#64748B"/>
+  <circle cx="1122" cy="620" r="5" fill="#64748B"/>
+
+  <g filter="url(#s2)">
+    <rect x="950" y="643" width="345" height="86" rx="10" fill="url(#coreCard)" stroke="#3B82F6" stroke-width="1"/>
+    <rect x="950" y="643" width="6" height="86" rx="3" fill="#60A5FA"/>
+  </g>
+  <text x="1127" y="681" font-size="15" font-weight="700" fill="#F1F5F9" text-anchor="middle">Custom Enterprise</text>
+  <text x="1127" y="703" font-size="15" font-weight="700" fill="#F1F5F9" text-anchor="middle">Workflows</text>
+
+</svg>
