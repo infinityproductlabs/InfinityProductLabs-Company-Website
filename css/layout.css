@@ -38,7 +38,7 @@
 }
 
 .header-container.container {
-  max-width: 1400px;
+  max-width: 1600px;
   width: 100%;
 }
 
@@ -112,7 +112,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 16px;
+  gap: 12px;
   align-items: center;
 }
 
@@ -121,13 +121,14 @@
 }
 
 .nav-link {
-  font-size: var(--fs-sm);
+  font-size: 14px;
   font-weight: 500;
   color: var(--text-secondary);
   transition: var(--transition-smooth);
   position: relative;
   padding: var(--space-sm) 0;
   display: block;
+  white-space: nowrap;
 }
 
 .nav-link:hover,
