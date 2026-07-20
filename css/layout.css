@@ -42,7 +42,7 @@
   width: 100%;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1400px) {
   .header-container.container {
     padding-left: var(--space-sm);
     padding-right: var(--space-sm);
@@ -388,7 +388,7 @@ main {
 }
 
 /* Responsiveness */
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .nav-toggle {
     display: flex;
   }

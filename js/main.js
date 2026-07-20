@@ -50,7 +50,7 @@ function initMobileNav() {
   const submenuLinks = mainNav.querySelectorAll('.nav-link.has-submenu');
   submenuLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-      if (window.innerWidth <= 1024) {
+      if (window.innerWidth <= 1280) {
         e.preventDefault();
         link.classList.toggle('submenu-active');
         const parentItem = link.closest('.nav-item');

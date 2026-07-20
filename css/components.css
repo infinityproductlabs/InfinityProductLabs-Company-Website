@@ -285,7 +285,7 @@ textarea.form-control {
   gap: var(--space-lg);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .hero-grid {
     grid-template-columns: 1fr;
     text-align: center;
@@ -506,7 +506,7 @@ textarea.form-control {
 }
 
 /* Mobile responsive menu overlays */
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .mega-grid {
     grid-template-columns: 1fr;
     gap: var(--space-md);
